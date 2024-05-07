@@ -28,16 +28,6 @@ connectDB(); // Establecer conexión a la base de datos
 app.use(express.json()); // Configurar middleware para analizar el cuerpo de las solicitudes en formato JSON
   
 
-
-// router.get('/activities', async (req, res) => {
-//     try {
-//       const actividades = await Actividad.find({});
-//       res.send(actividades);
-//     } catch (error) {
-//       res.status(500).send('Error interno del servidor');
-//     }
-// });
-// app.use('/', router)
 // app.use('/', usersRouter); // Usar el enrutador de usuarios para las rutas '/users'
 app.use('/', activitiesRouter); // Usar el enrutador de actividades para las rutas '/activities'
 
