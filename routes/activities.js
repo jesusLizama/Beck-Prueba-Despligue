@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Actividad = require('../models/activities');
-const logger = require('../winston/logger');
+//const logger = require('../winston/logger');
 // const {verifyAdmin, verifyToken, verifyTokenAndAccessColegio, verifyTokenAndAccessOcio, verifyTokenAndAccessTrabajo} = require('../middleware/verifyToken');
 
 // /**
@@ -11,29 +11,29 @@ const logger = require('../winston/logger');
 //  *   description: Endpoints relacionados con las actividades
 //  */
 
-// /**
-//  * @swagger
-//  * /activities:
-//  *   get:
-//  *     summary: Obtener todas las actividades
-//  *     description: Devuelve una lista de todas las actividades.
-//  *     tags: [Activities]
-//  *     responses:
-//  *       200:
-//  *         description: OK. Lista de actividades obtenida correctamente.
-//  *       500:
-//  *         description: Error interno del servidor.
-//  */
-// router.get('/activities', async (req, res) => {
-//   try {
-//     const actividades = await Actividad.find({});
-//     logger.info('Actividades obtenidas correctamente');
-//     res.send(actividades);
-//   } catch (error) {
-//     logger.error('Error al obtener actividades:', error);
-//     res.status(500).send('Error interno del servidor');
-//   }
-// });
+/**
+ * @swagger
+ * /activities:
+ *   get:
+ *     summary: Obtener todas las actividades
+ *     description: Devuelve una lista de todas las actividades.
+ *     tags: [Activities]
+ *     responses:
+ *       200:
+ *         description: OK. Lista de actividades obtenida correctamente.
+ *       500:
+ *         description: Error interno del servidor.
+ */
+router.get('/activities', async (req, res) => {
+  try {
+    const actividades = await Actividad.find({});
+    //logger.info('Actividades obtenidas correctamente');
+    res.send(actividades);
+  } catch (error) {
+    //logger.error('Error al obtener actividades:', error);
+    res.status(500).send('Error interno del servidor');
+  }
+});
 
 // /**
 //  * @swagger
@@ -205,4 +205,4 @@ const logger = require('../winston/logger');
 //   }
 // });
 
-// module.exports = router;
+module.exports = router;

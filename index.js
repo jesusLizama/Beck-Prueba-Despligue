@@ -39,7 +39,7 @@ app.use(express.json()); // Configurar middleware para analizar el cuerpo de las
 // });
 // app.use('/', router)
 // app.use('/', usersRouter); // Usar el enrutador de usuarios para las rutas '/users'
-//app.use('/', activitiesRouter); // Usar el enrutador de actividades para las rutas '/activities'
+app.use('/', activitiesRouter); // Usar el enrutador de actividades para las rutas '/activities'
 
 
 // En index.js
