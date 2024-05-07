@@ -2,14 +2,14 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const router = express.Router();
-const User = require('../models/users');
-const {verifyAdmin, verifyToken, verifyTokenAndAccessColegio, verifyTokenAndAccessOcio, verifyTokenAndAccessTrabajo} = require('../middleware/verifyToken');
+const User = require('./models/users');
+const {verifyAdmin, verifyToken, verifyTokenAndAccessColegio, verifyTokenAndAccessOcio, verifyTokenAndAccessTrabajo} = require('./middleware/verifyToken');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 
 const secreto = process.env.SECRETO;
 
-const logger = require('../winston/logger');
+const logger = require('./winston/logger');
 
 /**
  * @swagger

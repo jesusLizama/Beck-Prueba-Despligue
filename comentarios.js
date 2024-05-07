@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const Comentario = require('../models/comentarios');
-const logger = require('../winston/logger');
-const {verifyAdmin, verifyToken, verifyTokenAndAccessColegio, verifyTokenAndAccessOcio, verifyTokenAndAccessTrabajo} = require('../middleware/verifyToken');
+const Comentario = require('./models/comentarios');
+const logger = require('./winston/logger');
+const {verifyAdmin, verifyToken, verifyTokenAndAccessColegio, verifyTokenAndAccessOcio, verifyTokenAndAccessTrabajo} = require('./middleware/verifyToken');
 
 /**
  * @swagger
