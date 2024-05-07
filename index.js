@@ -1,7 +1,7 @@
 
 const express = require('express');
 const { connectDB } = require('./db/db');
-const usersRouter = require('./routes/users');
+// const usersRouter = require('./routes/users');
 // const activitiesRouter = require('./routes/activities');
 // const barriosRouter = require('./routes/barrios');
 // const ocioRouter = require('./routes/ocio');
