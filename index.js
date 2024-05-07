@@ -1,16 +1,6 @@
 
 const express = require('express');
 const { connectDB } = require('./db/db');
-const usersRouter = require('./routes/users');
-const activitiesRouter = require('./routes/activities');
-const barriosRouter = require('./routes/barrios');
-const ocioRouter = require('./routes/ocio');
-const trabajoRouter = require('./routes/trabajo');
-const colegioRouter = require('./routes/colegio');
-const treeRouter = require('./routes/tree');
-const comentariosRouter = require('./routes/comentarios');
-
-const swaggerMiddleware = require('./swagger/swagger'); // Importa el middleware de Swagger
 
 
 const app = express();
