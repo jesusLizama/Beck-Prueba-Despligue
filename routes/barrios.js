@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const Barrio = require('./models/barrios');
-const Comentario = require('./models/comentarios');
-const Tree = require('./models/tree'); // Importa el modelo Tree
-const { getRecommendation, actualizarResultados } = require('./decision-tree/tree');
-const logger = require('./winston/logger');
-const {verifyAdmin, verifyToken, verifyTokenAndAccessColegio, verifyTokenAndAccessOcio, verifyTokenAndAccessTrabajo} = require('./middleware/verifyToken');
+const Barrio = require('../models/barrios');
+const Comentario = require('../models/comentarios');
+const Tree = require('../models/tree'); // Importa el modelo Tree
+const { getRecommendation, actualizarResultados } = require('../decision-tree/tree');
+const logger = require('../winston/logger');
+const {verifyAdmin, verifyToken, verifyTokenAndAccessColegio, verifyTokenAndAccessOcio, verifyTokenAndAccessTrabajo} = require('../middleware/verifyToken');
 
 /**
  * @swagger
