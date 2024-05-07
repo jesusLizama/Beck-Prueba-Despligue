@@ -26,17 +26,15 @@ app.use(express.json()); // Configurar middleware para analizar el cuerpo de las
 
 
 
-app.use('/', usersRouter); // Usar el enrutador de usuarios para las rutas '/users'
-app.use('/', activitiesRouter); // Usar el enrutador de actividades para las rutas '/activities'
-app.use('/', barriosRouter); // Usar el enrutador de actividades para las rutas '/barrios'
-app.use('/', ocioRouter); // Usar el enrutador de actividades para las rutas '/ocio'
-app.use('/', trabajoRouter); // Usar el enrutador de actividades para las rutas '/trabajo'
-app.use('/', colegioRouter); // Usar el enrutador de actividades para las rutas '/colegio'
-app.use('/', treeRouter); // Usar el enrutador de actividades para las rutas '/tree'
-app.use('/', comentariosRouter); // Usar el enrutador de actividades para las rutas '/comentarios'
+// app.use('/', usersRouter); // Usar el enrutador de usuarios para las rutas '/users'
+// app.use('/', activitiesRouter); // Usar el enrutador de actividades para las rutas '/activities'
+// app.use('/', barriosRouter); // Usar el enrutador de actividades para las rutas '/barrios'
+// app.use('/', ocioRouter); // Usar el enrutador de actividades para las rutas '/ocio'
+// app.use('/', trabajoRouter); // Usar el enrutador de actividades para las rutas '/trabajo'
+// app.use('/', colegioRouter); // Usar el enrutador de actividades para las rutas '/colegio'
+// app.use('/', treeRouter); // Usar el enrutador de actividades para las rutas '/tree'
+// app.use('/', comentariosRouter); // Usar el enrutador de actividades para las rutas '/comentarios'
 
-
-app.use('/public', express.static(`${__dirname}/storage/img`)); // Usar el enrutador de actividades para las rutas '/trabajo'
 
 
 // LO DE SWAGGER!!
