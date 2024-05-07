@@ -5,6 +5,7 @@ const router = express.Router();
 const User = require('../models/users');
 const {verifyAdmin, verifyToken, verifyTokenAndAccessColegio, verifyTokenAndAccessOcio, verifyTokenAndAccessTrabajo} = require('../middleware/verifyToken');
 const jwt = require('jsonwebtoken');
+
 require('dotenv').config();
 
 const secreto = process.env.SECRETO;
