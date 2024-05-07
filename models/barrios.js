@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Comentario = require('../models/comentarios');
+const Comentario = require('./comentarios');
 
 const barrioSchema = new mongoose.Schema({
   nombre: {

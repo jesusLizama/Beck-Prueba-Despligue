@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const User = require('../models/users');
-const Neighborhood = require('../models/barrios'); // Importa el modelo del esquema del Barrio
+const User = require('./users');
+const Neighborhood = require('./barrios'); // Importa el modelo del esquema del Barrio
 
 const comentarioSchema = new mongoose.Schema({
   texto: {
