@@ -1,0 +1,334 @@
+{
+  "stats": {
+    "suites": 9,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-29T14:47:24.897Z",
+    "end": "2024-04-29T14:47:26.428Z",
+    "duration": 1531,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "860f4602-7d3f-4e52-845f-c95dbeab9e37",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "25aaed8c-30ee-4200-99f0-9493904acbad",
+          "title": "API de Actividades",
+          "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+          "file": "/src/test/pruebasTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "8430b932-dd78-4578-8666-b5d1359d0edc",
+              "title": "GET /actividades",
+              "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+              "file": "/src/test/pruebasTest.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "debería obtener la lista de actividades",
+                  "fullTitle": "API de Actividades GET /actividades debería obtener la lista de actividades",
+                  "timedOut": false,
+                  "duration": 967,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .get('/activities')\n  .end((err, res) => {\n    expect(err).to.be.null;\n    expect(res).to.have.status(200); \n    done();\n  });",
+                  "err": {},
+                  "uuid": "23e617a4-c78d-44e5-babe-add00683c39a",
+                  "parentUUID": "8430b932-dd78-4578-8666-b5d1359d0edc",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "23e617a4-c78d-44e5-babe-add00683c39a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 967,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 10000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "94113dd1-5540-4fa7-840c-f74f243ca57a",
+          "title": "API de Usuarios",
+          "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+          "file": "/src/test/pruebasTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "842683f5-7b7e-4ee1-b66a-465a327ba110",
+              "title": "POST /usuarios",
+              "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+              "file": "/src/test/pruebasTest.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "debería crear un usuario correctamente",
+                  "fullTitle": "API de Usuarios POST /usuarios debería crear un usuario correctamente",
+                  "timedOut": false,
+                  "duration": 178,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .post('/users')\n  .send({\n    email: 'test@example.com',\n    password: 'password',\n    nombre: 'Test',\n    apellidos: 'User',\n    telefono: '1234567892',\n    nickname: 'testuser2'\n  })\n  .end((err, res) => {\n    expect(err).to.be.null;\n    expect(res).to.have.status(201);\n    done();\n  });",
+                  "err": {},
+                  "uuid": "a2a2fd06-77c5-4b99-8d45-88bae9a0d98e",
+                  "parentUUID": "842683f5-7b7e-4ee1-b66a-465a327ba110",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a2a2fd06-77c5-4b99-8d45-88bae9a0d98e"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 178,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 10000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "db0d7ddc-ac2a-4202-985f-dc69f7718b31",
+          "title": "API de Recomendación de Barrio",
+          "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+          "file": "/src/test/pruebasTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "a0e78abe-9626-4de5-859e-83bd3e9b92db",
+              "title": "POST /recomendacion",
+              "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+              "file": "/src/test/pruebasTest.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "debería obtener una recomendación de barrio igual a Casablanca",
+                  "fullTitle": "API de Recomendación de Barrio POST /recomendacion debería obtener una recomendación de barrio igual a Casablanca",
+                  "timedOut": false,
+                  "duration": 141,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Suponiendo que tienes un usuario registrado en tu base de datos con estas credenciales\nconst credentials = {\n  email: 'test@example.com',\n  password: 'password'\n};\n// Realizar el inicio de sesión para obtener el token\nchai.request(app)\n  .post('/login')\n  .send(credentials)\n  .end((err, res) => {\n    try {\n      expect(err).to.be.null;\n      expect(res).to.have.status(200);\n      expect(res.body).to.have.property('token');\n      const token = res.body.token;\n      // Ahora que tenemos el token, hacemos la solicitud a la ruta protegida\n      const mockResponses = [\n        \"si\", \"si\", \"si\", \"si\", \"no\", \"si\", \"si\", \">75000\", \"si\", \"si\", \"si\", \"si\", \"no\", \"no\", \"no\", \"si\"\n      ];\n      chai.request(app)\n        .post('/recomendacion')\n        .set('Authorization', `Bearer ${token}`) // Establecemos el token en el encabezado de autorización\n        .send({ responses: mockResponses })\n        .end((err, res) => {\n          try {\n            expect(err).to.be.null;\n            expect(res).to.have.status(200);\n            // Verificar que la respuesta es un string no vacío\n            expect(res.text).to.be.a('string').that.is.not.empty;\n            // Verificar que la recomendación es la esperada\n            expect(res.text).to.equal('66151d0acc0535e96a0e7ad1'); // Suponiendo que esperas este valor\n            done();\n          } catch (error) {\n            done(error);\n          }\n        });\n    } catch (error) {\n      done(error);\n    }\n  });",
+                  "err": {},
+                  "uuid": "abf2243d-4ca2-4437-898b-58ba5bb71b9a",
+                  "parentUUID": "a0e78abe-9626-4de5-859e-83bd3e9b92db",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "abf2243d-4ca2-4437-898b-58ba5bb71b9a"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 141,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 10000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        },
+        {
+          "uuid": "662b3157-340e-4905-a59a-f7bc94d3c3c3",
+          "title": "API de Colegios",
+          "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+          "file": "/src/test/pruebasTest.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "dba464cd-96f5-4887-8efa-55a73de36ccd",
+              "title": "POST /colegio",
+              "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+              "file": "/src/test/pruebasTest.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "debería crear un nuevo colegio para el usuario",
+                  "fullTitle": "API de Colegios POST /colegio debería crear un nuevo colegio para el usuario",
+                  "timedOut": false,
+                  "duration": 142,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Suponiendo que tienes un usuario registrado en tu base de datos con estas credenciales\nconst credentials = {\n  email: 'admin@admin.com',\n  password: '5edfa2692bdacc5e6ee805c626c50cb44cebb065f092d9a1067d89f74dacd326'\n};\n// Realizar el inicio de sesión para obtener el token\nchai.request(app)\n  .post('/login')\n  .send(credentials)\n  .end((err, res) => {\n    try {\n      expect(err).to.be.null;\n      expect(res).to.have.status(200);\n      expect(res.body).to.have.property('token');\n      authToken = res.body.token; // Guardamos el token para usarlo en las solicitudes posteriores\n      // Datos del nuevo colegio\n      const colegioData = {\n        nombre: 'Colegio de prueba Esmegmun',\n        descripcion: 'Este es un colegio de prueba',\n        calle: 'Calle del colegio de prueba 123',\n        telefono: '12345456'\n      };\n      // Creamos un nuevo colegio\n      chai.request(app)\n        .post('/colegio')\n        .set('Authorization', `Bearer ${authToken}`) // Establecemos el token en el encabezado de autorización\n        .send(colegioData)\n        .end((err, res) => {\n          try {\n            expect(err).to.be.null;\n            expect(res).to.have.status(201);\n            done();\n          } catch (error) {\n            done(error);\n          }\n        });\n    } catch (error) {\n      done(error);\n    }\n  });",
+                  "err": {},
+                  "uuid": "d14e0eed-115e-4843-b201-46c1c94c7fcf",
+                  "parentUUID": "dba464cd-96f5-4887-8efa-55a73de36ccd",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d14e0eed-115e-4843-b201-46c1c94c7fcf"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 142,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 10000
+            },
+            {
+              "uuid": "a4598e42-e936-4fb4-b2fe-c758ebba00de",
+              "title": "GET /colegio",
+              "fullFile": "/Users/jesus/Desktop/UNI/4/2ºCuatri/STW/proyecto/src/test/pruebasTest.js",
+              "file": "/src/test/pruebasTest.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "debería obtener el nuevo colegio creado",
+                  "fullTitle": "API de Colegios GET /colegio debería obtener el nuevo colegio creado",
+                  "timedOut": false,
+                  "duration": 91,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Suponiendo que tienes un usuario registrado en tu base de datos con estas credenciales\nconst credentials = {\n  email: 'admin@admin.com',\n  password: '5edfa2692bdacc5e6ee805c626c50cb44cebb065f092d9a1067d89f74dacd326'\n};\n// Realizar el inicio de sesión para obtener el token\nchai.request(app)\n  .post('/login')\n  .send(credentials)\n  .end((err, res) => {\n    try {\n      expect(err).to.be.null;\n      expect(res).to.have.status(200);\n      expect(res.body).to.have.property('token');\n      authToken = res.body.token; // Guardamos el token para usarlo en las solicitudes posteriores\n      // Hacemos una solicitud GET para obtener todos los colegios del usuario\n      chai.request(app)\n        .get('/colegio')\n        .set('Authorization', `Bearer ${authToken}`) // Establecemos el token en el encabezado de autorización\n        .end((err, res) => {\n          try {\n            expect(err).to.be.null;\n            expect(res).to.have.status(200);\n            expect(res.body).to.be.an('array').that.is.not.empty;\n            // Verificamos que el nuevo colegio esté presente en la lista de colegios del usuario\n            const newColegio = res.body.find(colegio => colegio.nombre === 'Colegio de prueba Esmegmun');\n            expect(newColegio).to.exist;\n            done();\n          } catch (error) {\n            done(error);\n          }\n        });\n    } catch (error) {\n      done(error);\n    }\n  });",
+                  "err": {},
+                  "uuid": "a926e1cb-183b-4355-af4e-482ed99e1cdf",
+                  "parentUUID": "a4598e42-e936-4fb4-b2fe-c758ebba00de",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "a926e1cb-183b-4355-af4e-482ed99e1cdf"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 91,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 10000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 10000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 10000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "[object Object]": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

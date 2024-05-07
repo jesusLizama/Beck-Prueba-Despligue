@@ -1,0 +1,21 @@
+{
+    "extension": ["js", "cjs", "mjs"],
+    "timeout": 10000,
+    "slow": 2000,
+    "recursive": true,
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "overwrite": true,
+      "html": true,
+      "json": false
+    },
+    "ui": "bdd",
+    "watch": false,
+    "parallel": false,
+    "bail": false,
+    "jobs": 4,
+    "check-leaks": true,
+    "growl": false,
+    "colors": true,
+    "exit": true
+  }
